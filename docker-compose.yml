@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./src:/app
+    container_name: golang_app
+    tty: true
+    restart: 'always'
